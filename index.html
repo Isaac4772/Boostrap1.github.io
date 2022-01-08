@@ -28,6 +28,33 @@
       h1 {
         font-family: "Orev Edge";
       }
+
+      input.search{
+        background-image: url('images/search.png');
+        background-size: 22px;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-position: right;
+        background-origin: content-box;
+      }
+
+      input.search:focus{
+        background: none;
+      }
+
+      button.bookmark{
+        border: none;
+        background: none;
+      }
+
+      button.bookmark:hover{
+        color: gray;
+        transition-duration: 0.1s;
+      }
+
+      button.bookmark:active{
+        color: rgb(5, 141, 226);
+      }
     </style>
   </head>
   <body>
@@ -52,7 +79,7 @@
                     </li>
                   </ul>
                   <form class="d-flex">
-                    <input class="form-control me-2 rounded-pill px-2" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control me-2 rounded-pill px-2 search" type="search" placeholder="Search" aria-label="Search">
                   </form>
                 </div>
               </div>
@@ -94,11 +121,13 @@
                   </p>
 
                   <div class="mt-5 clearfix">
-                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                      <p class="card-text ms-2 d-inline-block">Steve <br> 
+                    <a href="#">
+                      <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                      <p class="card-text ms-2 d-inline-block text-black">Steve <br> 
                         <small class="text-muted">22 July 2045 - 6 min read</small>    
                       </p>
-                      <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                    </a>
+                      <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                   </div>
                   
                 </div>
@@ -127,11 +156,13 @@
                     longer.
                   </p>
                   <div class="mt-5 clearfix">
-                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                      <p class="card-text ms-2 d-inline-block">Mary <br> 
-                        <small class="text-muted">22 July 2045 - 6 min reado</small>
+                    <a href="#">
+                      <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                      <p class="card-text ms-2 d-inline-block text-black">Mary <br> 
+                        <small class="text-muted">22 July 2045 - 6 min read</small>    
                       </p>
-                      <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                    </a>
+                      <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                   </div>
                 </div>
               </div>
@@ -159,11 +190,13 @@
                     longer.
                   </p>
                   <div class="mt-5 clearfix">
-                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                      <p class="card-text ms-2 d-inline-block">Jane <br> 
-                        <small class="text-muted">22 July 2045 - 6 min read</small>
+                    <a href="#">
+                      <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                      <p class="card-text ms-2 d-inline-block text-black">Jane <br> 
+                        <small class="text-muted">22 July 2045 - 6 min read</small>    
                       </p>
-                      <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                    </a>
+                      <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                   </div>
                 </div>
               </div>
@@ -191,11 +224,13 @@
                     longer.
                   </p>
                   <div class="mt-5 clearfix">
-                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                      <p class="card-text ms-2 d-inline-block">Sai <br> 
-                        <small class="text-muted">22 July 2045 - 6 min read</small>
+                    <a href="#">
+                      <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                      <p class="card-text ms-2 d-inline-block text-black">Sai <br> 
+                        <small class="text-muted">22 July 2045 - 6 min read</small>    
                       </p>
-                      <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                    </a>
+                      <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                   </div>
                 </div>
               </div>
@@ -224,11 +259,13 @@
                 </div>
 
                 <div class="m-3 clearfix">
-                  <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                    <p class="card-text ms-2 d-inline-block">Steve <br> 
-                      <small class="text-muted">22 July 2045 - 6 min read</small>
+                  <a href="#">
+                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                    <p class="card-text ms-2 d-inline-block text-black">Sai <br> 
+                      <small class="text-muted">22 July 2045 - 6 min read</small>    
                     </p>
-                    <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                  </a>
+                    <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                 </div>
               </div>
             </div>
@@ -243,11 +280,13 @@
                 </div>
 
                 <div class="m-3 clearfix">
-                  <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                    <p class="card-text ms-2 d-inline-block">Steve <br> 
-                      <small class="text-muted">22 July 2045 - 6 min read</small>
+                  <a href="#">
+                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                    <p class="card-text ms-2 d-inline-block text-black">Sai <br> 
+                      <small class="text-muted">22 July 2045 - 6 min read</small>    
                     </p>
-                    <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                  </a>
+                    <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                 </div>
               </div>
             </div>
@@ -262,35 +301,18 @@
                 </div>
 
                 <div class="m-3 clearfix">
-                  <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                    <p class="card-text ms-2 d-inline-block">Steve <br> 
-                      <small class="text-muted">22 July 2045 - 6 min read</small>
+                  <a href="#">
+                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                    <p class="card-text ms-2 d-inline-block text-black">Sai <br> 
+                      <small class="text-muted">22 July 2045 - 6 min read</small>    
                     </p>
-                    <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                  </a>
+                    <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                 </div>
               </div>
             </div>
 
             <!-- Card 4 -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-              <div class="card">
-                <img src="images/girl (4).jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Best gallaries in the world with photos</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer</p>
-                </div>
-
-                <div class="m-3 clearfix">
-                  <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                    <p class="card-text ms-2 d-inline-block">Steve <br> 
-                      <small class="text-muted">22 July 2045 - 6 min read</small>
-                    </p>
-                    <i class="far fa-bookmark float-end fa-lg mt-3"></i>
-                </div>
-              </div>
-            </div>
-
-            <!-- Card 5 -->
             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
               <div class="card">
                 <img src="images/girl (5).jpg" class="card-img-top" alt="...">
@@ -300,11 +322,34 @@
                 </div>
 
                 <div class="m-3 clearfix">
-                  <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                    <p class="card-text ms-2 d-inline-block">Steve <br> 
-                      <small class="text-muted">22 July 2045 - 6 min read</small>
+                  <a href="#">
+                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                    <p class="card-text ms-2 d-inline-block text-black">Sai <br> 
+                      <small class="text-muted">22 July 2045 - 6 min read</small>    
                     </p>
-                    <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                  </a>
+                    <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
+                </div>
+              </div>
+            </div>       
+
+            <!-- Card 5 -->
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
+              <div class="card">
+                <img src="images/girl (4).jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Best gallaries in the world with photos</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer</p>
+                </div>
+
+                <div class="m-3 clearfix">
+                  <a href="#">
+                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                    <p class="card-text ms-2 d-inline-block text-black">Sai <br> 
+                      <small class="text-muted">22 July 2045 - 6 min read</small>    
+                    </p>
+                  </a>
+                    <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                 </div>
               </div>
             </div>
@@ -319,11 +364,13 @@
                 </div>
 
                 <div class="m-3 clearfix">
-                  <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
-                    <p class="card-text ms-2 d-inline-block">Steve <br> 
-                      <small class="text-muted">22 July 2045 - 6 min read</small>
+                  <a href="#">
+                    <img src="images/profile.jpg" width="45px" height="45px" class="img-fluid rounded-circle float-start" alt="">   
+                    <p class="card-text ms-2 d-inline-block text-black">Sai <br> 
+                      <small class="text-muted">22 July 2045 - 6 min read</small>    
                     </p>
-                    <i class="far fa-bookmark float-end fa-lg mt-3"></i>
+                  </a>
+                    <button class="bookmark float-end mt-2" ><i class="far fa-bookmark  fa-lg "></i></button>
                 </div>
               </div>
             </div>
